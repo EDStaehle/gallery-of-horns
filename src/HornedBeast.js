@@ -1,7 +1,8 @@
 import React from "react";
-
 import './HornedBeasts.css';
 import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
 class HornedBeast extends React.Component {
   constructor(props) {
@@ -22,33 +23,36 @@ class HornedBeast extends React.Component {
     : this.setState({
      favstop: 'Only 10 hearts allowed',
     })
-    if(this.state.favnum >= 10){
-      stop.removeEventListener('click', this.handlefavs);
-      console.log('hello');
-    }
-    console.log(this.handlefavs);
+  
+    
+  }
+  handleNameClick = () => {
+    this.props.openModal(this.props.title, this.props.image_url)
   }
   render() {
     
     return (
       <article>
-        <Card >
-          
+        <Col>
+        <Card>
           <Card.Img variant="top"
-            onClick={this.state.favstop ?()=>{} : this.handlefavs}
             title={this.props.title}
             src={this.props.image_url}
             alt={this.props.title}
             id={this.props._id}
             />
             <Card.Body>
-            <p> Number of ❤️ = favs:{this.state.favs}</p>
+            <Button variant="outline-success" onClick={this.state.favstop ?()=>{} : this.handlefavs} >Number of ❤️ = favs:{this.state.favs}
+            </Button>
             <p>{this.state.favstop}</p>
-           <Card.Title><h3>{this.props.title}</h3></Card.Title>
+           <Card.Title><h3> {this.props.title}</h3></Card.Title>
           <p>{this.props.description}</p>
+          <Button variant="outline-info" onClick={this.handleNameClick}>Learn More
+            </Button>
           </Card.Body>
         </Card>
-      </article >
+        </Col>
+      </article>
     )
   }
 }

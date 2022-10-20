@@ -81,4 +81,15 @@ Finish time: 530 pst
 
 Actual time needed to complete: 2 hours
 
+### day three estimates
+
+Number and name of feature: Horned Beasts day 3
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 430
+
+Finish time: 830
+
+Actual time needed to complete: 4 hours.
 
