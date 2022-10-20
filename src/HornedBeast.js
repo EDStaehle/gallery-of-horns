@@ -14,7 +14,6 @@ class HornedBeast extends React.Component {
     };
   };
   handlefavs = (event) => {
-    let stop = document.querySelector(`[alt='${event.target.alt}']`)
     this.state.favnum !== 10? this.setState({
       favs: this.state.favs + '❤️',
       favnum: this.state.favnum + 1,
