@@ -91,7 +91,7 @@ Start time: 430
 
 Finish time: 830
 
-Actual time needed to complete: 4 hours.
+Actual time needed to complete: 4 hours
 
 ### day 4 eastimates
 
