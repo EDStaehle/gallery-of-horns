@@ -3,8 +3,8 @@ import React from 'react';
 import './App.css';
 import Header from './Header';
 import Main from './Main';
-import Footer from './Footer';
 import SelectedBeast from './selectedBeats'
+import Footer from './Footer';
 import data from './data.json'
 
 // class componenet
@@ -14,6 +14,7 @@ class App extends React.Component {
     this.state = {
       showModal: false,
       selectedBeastTitle: '',
+      
     }
   }
   closeModal = () => {
@@ -46,7 +47,6 @@ class App extends React.Component {
           img={this.state.selectedBeastImg}
           data={data}
           />
-    
         <Footer />
       </>
     )
