@@ -103,4 +103,4 @@ Start time: 730
 
 Finish time: 830
 
-Actual time needed to complete: 1 hours
+Actual time needed to complete: 1 hours.
