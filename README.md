@@ -93,3 +93,14 @@ Finish time: 830
 
 Actual time needed to complete: 4 hours
 
+### day 4 eastimates
+
+Number and name of feature: Horned Beasts day 4
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 730
+
+Finish time: 830
+
+Actual time needed to complete: 1 hour
